@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Cryptography.X509Certificates;
 namespace Lab1
 {
@@ -35,7 +35,7 @@ namespace Lab1
         }
         public override string ToString()
         {
-            return $"Name: {name}";
+            return name;
         }
     }   
 }
