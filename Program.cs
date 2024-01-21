@@ -1,4 +1,4 @@
-﻿using System.CodeDom;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -38,7 +38,7 @@ void PublisherData()
     int totalCount = collection.Count();
     float publisherCount = publisherQuery.Count();
     double publisherPercentage = Math.Round(publisherCount / totalCount * 100, 2);
-    Console.WriteLine($"Out of {totalCount} games in the collection, {publisherCount} are from {input} - which is %{publisherPercentage}.");
+    Console.WriteLine($"\nOut of {totalCount} games in the collection, {publisherCount} are from {input} - which is %{publisherPercentage}.\nPress enter to continue...");
 }
 
 void GenreData()
@@ -61,7 +61,7 @@ void GenreData()
     int totalCount = collection.Count();
     float genreCount = genreQuery.Count();
     double genrePercentage = Math.Round(genreCount / totalCount * 100, 2);
-    Console.WriteLine($"Out of {totalCount} games, {genreCount} are of the {input} genre - which is %{genrePercentage}.");
+    Console.WriteLine($"\nOut of {totalCount} games, {genreCount} are of the {input} genre - which is %{genrePercentage}.\nPress enter to continue...");
 }
 
 bool isDone = false;
@@ -90,7 +90,7 @@ while(!isDone)
             break;
         default:
             Console.ForegroundColor= ConsoleColor.Red;
-            Console.WriteLine("Please enter a valid choice.");
+            Console.WriteLine("Please enter a valid choice...");
             Console.ReadLine();
             Console.Clear();
             break;
